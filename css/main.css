@@ -53,6 +53,7 @@ header {
 nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: var(--color-secondary);
 }
 
 .nav-logo-container {
@@ -72,25 +73,29 @@ nav {
 }
 
 .nav-link-container a {
-    color: black;
-    border-bottom: 1px solid black;
+    color: var(--grey);
+    border-bottom: 1px solid var(--grey);
 }
 
 .main-home {
     height: calc(100% - 120px);
     text-align: center;
     padding-top: 150px;
-    background-image: url('https://i.pinimg.com/564x/f0/5a/c1/f05ac1263b4e36834852a79339bbce4a.jpg');
+    background-image: url('/assets/img/home.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .main-home-text {
-    color: white;
+    color: var(--grey);
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: 10px;
+}
+
+.main-home-text br:nth-child(1) {
+    font-size: 1.4rem;
 }
 
 .main-home-button {
@@ -98,8 +103,8 @@ nav {
     padding: 10px;
     font-size: 1rem;
     font-weight: bold;
-    border: 1px solid white;
-    background-color: #47cfac;
+    border: 1px solid var(--grey);
+    background-color: var(--grey);
     cursor: pointer;
 }
 
@@ -283,6 +288,8 @@ footer {
 .info-container-grid img {
     width: 100%;
     min-width: 220px;
+    max-height: 400px;
+    object-fit: cover;
 }
 
 .perfil-info {
